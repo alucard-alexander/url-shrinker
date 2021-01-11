@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby 2.7.2
 
-Things you may want to cover:
+* Rails version 6.0.3.4
 
-* Ruby version
+* run "bundle install"
 
-* System dependencies
+* run "rails db:create && rails db:migrate"
 
-* Configuration
+* sqlite Database is used not postgresql or mysql.
 
-* Database creation
+* to run test cases run "rspec" command under the application root folder
 
-* Database initialization
+* to start the application run "rails s" open a browser and start searching "http://localhost:3000"
 
-* How to run the test suite
+* a postman collection is exported into cybrilla.postman_collection.json file
 
-* Services (job queues, cache servers, search engines, etc.)
+* file is under the application root folder
 
-* Deployment instructions
-
-* ...
+* API reference(example) can be seen by importing the file into the postman
