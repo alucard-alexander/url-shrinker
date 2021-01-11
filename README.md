@@ -1,21 +1,49 @@
-# README
+# URL shrinker
 
-* Ruby 2.7.2
+### Getting Started
 
-* Rails version 6.0.3.4
+The following steps walk through getting the application running. Before you start,
 
-* run "bundle install"
+1. [Clone the project](#1-clone-the-project)
+2. [Install and set up the environment](#2-install-and-set-up-the-environment)
+3. [Run the tests](#3-run-the-tests)
+4. [Start the app](#4-start-the-app)
 
-* run "rails db:create && rails db:migrate"
 
-* sqlite Database is used not postgresql or mysql.
+#### 1. Clone the project
+1. Navigate to your project's chosen parent directory, e.g. `$ cd ~/Documents/assignment`
+2. [Clone the project](https://github.com/alucard-alexander/url-shrinker.git), e.g. `git clone https://github.com/alucard-alexander/url-shrinker.git`
+3. Navigate into the project directory: `$ cd url-shrinker`
 
-* to run test cases run "rspec" command under the application root folder
+#### 2. Install and set up the environment
 
-* to start the application run "rails s" open a browser and start searching "http://localhost:3000"
+* Make sure your Ruby version 2.7.2 and Rails 6.0.3.4
 
-* a postman collection is exported into cybrilla.postman_collection.json file
+```
+$ ruby -v
+$ rails -v
+$ bundle
+$ rails db:migrate
+$ rails db:seed
+```
 
-* file is under the application root folder
+* If there is any missmatch please open the link and follow the instruction.
 
-* API reference(example) can be seen by importing the file into the postman
+1. Ruby installation -> https://gorails.com/setup
+
+
+#### 3. Run the tests
+
+Run `rspec` to run all the tests and make sure everything works.
+
+If you just want to run a single test file you can pass the path to the file, either using `rspec`:
+```
+bundle exec rspec <path to test>
+```
+
+#### 4. Start the app
+
+```
+$ cd url_shrinker
+$ rails s
+```
