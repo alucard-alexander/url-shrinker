@@ -8,7 +8,7 @@ class Url < ApplicationRecord
     message: 'You provided invalid URL'
   }
 
-  validates :new_short_url, uniqueness: true, presence: true
+  validates :new_short_url, uniqueness: true
 
   private
 
